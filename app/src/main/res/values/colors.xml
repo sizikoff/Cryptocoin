@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c4a700</color>
+    <color name="colorPrimaryDark">#c4a700</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="actionbar_text_color">#000000</color>
+    <color name="white">#FFFF</color>
+
+    <color name="percentChangeNegative">#F44336</color>
+    <color name="percentChangePositive">#8BC34A</color>
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "366511846502",
+    "firebase_url": "https://mycoins-de823.firebaseio.com",
+    "project_id": "mycoins-de823",
+    "storage_bucket": "mycoins-de823.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366511846502:android:dd7653d9ea12937c",
+        "android_client_info": {
+          "package_name": "com.loftschool.loftcoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366511846502-3bkvg8jef8jn0qsbnlp4gqltnboppi07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.loftschool.loftcoin",
+            "certificate_hash": "104d84dc5c3d937607b50727666b1546714cca11"
+          }
+        },
+        {
+          "client_id": "366511846502-g4tepqm1k42dovhjacmeomeo36456t5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdMEwMhwOfXcMTrKvkyyzroeynkXwXziA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366511846502-g4tepqm1k42dovhjacmeomeo36456t5q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
