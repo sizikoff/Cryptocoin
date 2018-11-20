@@ -6,8 +6,8 @@ android {
         applicationId "ru.tihomirov.cryptocoin"
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 2
-        versionName "1.1"
+        versionCode 4
+        versionName "2.007"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

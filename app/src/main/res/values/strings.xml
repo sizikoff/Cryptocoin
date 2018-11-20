@@ -7,11 +7,11 @@
     <string name="donate">Donate</string>
     <string name="developer">О разработчике</string>
     <string name="google_play_license">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmTRr0VMxPwW6SSIWHzBPuzXWjkdQjzl3vKttE0AxRyu0vecHz9+6Vrhg0OSWUaAdGStprmNxtylTi0DyxdA6SoFVzZAKZOIju0l4nr9mmuFOC72WwicrU1z5Rs8rzv80dYHgDrVjqYPkqOs5+JpJV2X2tsRl0W0F8pkT30JZ3A0GdNxrscMFLEBpHjBhkppeZuIjY3L2Y6yjIvo1FnsDKFl0PqJJSiDozh3HcUCWnBMWc1IohHkkAlJYdUkQqLlI+BfR11lthbSm4YsO7tGafIUq6Jyp2SZDPXTZn8QWfzGLC9KS2k7718mbCw18U35E7cqMk1jz7so4qVQIDAQAB</string>
-    <string name="product_id">purchase_moneys</string>
+    <string name="product_id">purchase_money</string>
     <string name="test_pokupka">Спасибо за покупку</string>
     <string name="test_pokupka1">Покупка уже была совершена</string>
-    <string name="out">Отключение рекламы/Поддержка</string>
-    <string name="reklama">Если вам понравилось приложение,вы можете помочь его дальнейшему развитию,отключив рекламу всего за 1$</string>
+    <string name="out">Поддержка</string>
+    <string name="reklama">Если вам понравилось приложение,вы можете помочь его дальнейшему развитию,задонатив 1$ или кликнуть внизу приложения на рекламу</string>
     <string name="help">Помочь проекту</string>
     <string name="cancel">Cancel</string>
     <string name="developement">Разработчик</string>

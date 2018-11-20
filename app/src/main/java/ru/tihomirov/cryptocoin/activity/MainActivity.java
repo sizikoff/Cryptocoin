@@ -169,45 +169,17 @@ public class MainActivity extends AppCompatActivity implements BillingProcessor.
             }
         });
     }
-
-    public void setIsPurchased(boolean purchased, Context c){
-        SharedPreferences prefs = PreferenceManager
-                .getDefaultSharedPreferences(c);
-
-        SharedPreferences.Editor editor= prefs.edit();
-
-        editor.putBoolean(PRODUCT_ID_BOUGHT, purchased);
-        editor.apply();
-    }
-
-    public static boolean getIsPurchased(Context c){
-        SharedPreferences prefs = PreferenceManager
-                .getDefaultSharedPreferences(c);
-
-        boolean prefson = prefs.getBoolean(PRODUCT_ID_BOUGHT, false);
-
-        return prefson;
-    }
-
+    
 
     @Override
     public void onProductPurchased(@NonNull String productId, @Nullable TransactionDetails details) {
-        if (bp.isPurchased(productId)) {
-            prefManager.setAdsStatus(false); // 1. записываем в `SharedPreferences` состояние рекламы (ВЫКЛ / false)
-            Log.v("MainActivity", "ПОКУПКА ПРОШЛА");
-            AdView adView = (AdView) findViewById(R.id.adView);
-            adView.setVisibility(View.GONE);
+        Toast.makeText(context, "Спасибо за поддержку", Toast.LENGTH_SHORT).show();
         }
-    }
+    
 
     @Override
     public void onPurchaseHistoryRestored() {
-        prefManager.setAdsStatus(false); // 1. записываем в `SharedPreferences` состояние рекламы (ВЫКЛ / false)
-        setIsPurchased(true, MainActivity.this);
-            getIsPurchased(this);
-            Log.v("INFO", "Purchase actually restored");
-            AdView adView = (AdView) findViewById(R.id.adView);
-            adView.setVisibility(View.GONE);
+        
     }
 
     @Override
@@ -225,24 +197,10 @@ public class MainActivity extends AppCompatActivity implements BillingProcessor.
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Log.d("LOG", "Oyfn Activity Result");
-        if (!bp.handleActivityResult(requestCode, resultCode, data)) {
-            String license = getResources().getString(R.string.google_play_license);
-            AdView adView = (AdView) findViewById(R.id.adView);
-            adView.setVisibility(View.GONE);
-            }
+        
         }
 
-    @Override
-    protected void onResume() {
-        String license = getResources().getString(R.string.google_play_license);
-        if (bp.isPurchased(PRODUCT_ID())) {
-            prefManager.setAdsStatus(false); // 1. записываем в `SharedPreferences` состояние рекламы (ВЫКЛ / false)
-            AdView adView = (AdView) findViewById(R.id.adView);
-            adView.setVisibility(View.GONE);
-        }
-        super.onResume();
-    }
+   
 
 
     private String PRODUCT_ID(){
